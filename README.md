@@ -1,6 +1,6 @@
 To:Do
 
-[] Deploy (Vercel)
+[x] Deploy (Vercel)
 [] Scaffold basic UI with mock data
 [] Setup the database (Vercel Postgres)
 [] Attach database to UI
