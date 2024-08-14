@@ -1,6 +1,6 @@
-import Link from "next/link";
-import { mock } from "node:test";
 import { db } from "~/server/db";
+
+export const dynamic = "force-dynamic";
 
 const mockUrls = [
   "https://uploadthing-prod-sea1.s3.us-west-2.amazonaws.com/9e32b46b-960e-497d-90ac-e789bc40e3ad-egk9ur.jpg",
@@ -16,6 +16,7 @@ const mockImages = mockUrls.map((url, index) => ({
 
 
 export default async function HomePage() {
+ 
   const posts = await db.query.posts.findMany();
 
   return (
