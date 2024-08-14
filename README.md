@@ -1,9 +1,9 @@
 To:Do
 
 [x] Deploy (Vercel)
-[] Scaffold basic UI with mock data
-[] Tidy build process
-[] Setup the database (Vercel Postgres)
+[X] Scaffold basic UI with mock data
+[X] Tidy build process
+[X] Setup the database (Vercel Postgres)
 [] Attach database to UI
 [] Add Authentication (Clerk)
 [] Add image upload
