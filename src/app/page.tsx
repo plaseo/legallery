@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { mock } from "node:test";
 
 const mockUrls = [
   "https://uploadthing-prod-sea1.s3.us-west-2.amazonaws.com/9e32b46b-960e-497d-90ac-e789bc40e3ad-egk9ur.jpg",
@@ -17,13 +18,12 @@ export default function HomePage() {
   return (
     <main className="">
       <div className="flex flex-wrap gap-4">
-          {mockImages.map((image) => (
+          {[...mockImages, ...mockImages, ...mockImages].map((image) => (
             <div key={image.id} className="w-48">
               <img src={image.url} alt="image" />
             </div>
           ))}
       </div>
-      LeGallery (in progress)
     </main>
   );
 }
