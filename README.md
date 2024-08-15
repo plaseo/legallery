@@ -8,6 +8,7 @@ To:Do
 [] Add Authentication (Clerk)
 [] Add image upload
 [] 'taint' server-only
+[] Use Next/Image component
 [] Error management (Sentry)
 [] Routing/image page
 [] Delete button with server actions
