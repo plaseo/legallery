@@ -7,6 +7,7 @@ To:Do
 [] Attach database to UI
 [] Add Authentication (Clerk)
 [] Add image upload
+[] 'taint' server-only
 [] Error management (Sentry)
 [] Routing/image page
 [] Delete button with server actions
