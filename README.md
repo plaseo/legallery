@@ -7,9 +7,9 @@ To:Do
 - [x] Attach database to UI
 - [x] Add Authentication (Clerk)
 - [x] Add image upload
-- [] 'taint' server-only
-- [] Use Next/Image component
-- [] Error management (Sentry)
+- [x] 'taint' server-only
+- [x] Use Next/Image component
+- [x] Error management (Sentry)
 - [] Routing/image page
 - [] Delete button with server actions
 - [] Analytics (PostHog)
