@@ -95,8 +95,8 @@ export function LeUploadButton() {
   const { inputProps } = useUploadThingInputProps("imageUploader", {
     onUploadBegin() {
       toast(
-        <div className="flex items-center gap-2 text-slate-100">
-          <LoadingSpinnerSVG /><span className="text-xl">Uploading...</span>
+        <div className="flex items-center gap-2 text-slate-100 items-center">
+          <LoadingSpinnerSVG /><span className="text-lg">Uploading...</span>
         </div>,
         {
           duration: 100000,
