@@ -22,7 +22,7 @@ export function Modal({ children }: { children: React.ReactNode }) {
     
       <dialog
         ref={dialogRef}
-        className="absolute flex bg-zinc-900/50 text-white"
+        className="absolute flex bg-black/90 text-white"
         onClose={onDismiss}
       >
         {children}
