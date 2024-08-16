@@ -9,6 +9,7 @@ import { NavBar } from "./_components/navbar";
 import { NextSSRPlugin } from "@uploadthing/react/next-ssr-plugin";
 import { extractRouterConfig } from "uploadthing/server";
 import { ourFileRouter } from "./api/uploadthing/core";
+import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
   title: "LeGallery",
@@ -43,6 +44,18 @@ export default function RootLayout({
           </div>
           {modal}
           <div id="modal-root" />
+          <Toaster
+            toastOptions={{
+              classNames: {
+                toast: 'bg-blue-900',
+                title: 'text-slate-100',
+                description: 'text-slate-100',
+                actionButton: 'bg-zinc-400',
+                cancelButton: 'bg-orange-400',
+                closeButton: 'bg-lime-400',
+              },
+            }}
+          />
         </body>
       </html>
     </ClerkProvider>
