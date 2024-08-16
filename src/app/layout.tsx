@@ -10,8 +10,6 @@ import { NextSSRPlugin } from "@uploadthing/react/next-ssr-plugin";
 import { extractRouterConfig } from "uploadthing/server";
 import { ourFileRouter } from "./api/uploadthing/core";
 
-
-
 export const metadata: Metadata = {
   title: "LeGallery",
   description: "An Awesome Gallery App!",
@@ -38,9 +36,11 @@ export default function RootLayout({
            */
           routerConfig={extractRouterConfig(ourFileRouter)}
         />
-        <body className={`${GeistSans.variable} flex flex-col gap-4`}>
+        <body className={`${GeistSans.variable}`}>
+          <div className="grid h-screen grid-rows-[auto,1fr]">
           <NavBar />
-          {children}
+            <main className="overflow-y-scroll">{children}</main>
+          </div>
           {modal}
           <div id="modal-root" />
         </body>
