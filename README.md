@@ -10,7 +10,7 @@ To:Do
 - [x] 'taint' server-only
 - [x] Use Next/Image component
 - [x] Error management (Sentry)
-- [] Routing/image page
+- [x] Routing/image page
 - [] Delete button with server actions
 - [] Analytics (PostHog)
 - [] Ratelimiting (Upstash)
