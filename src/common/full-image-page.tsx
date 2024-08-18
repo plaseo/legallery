@@ -3,6 +3,7 @@ import { deleteImage, getImage } from "~/server/queries";
 import { Button } from "../components/ui/button";
 import Image from "next/image";
 
+
 export async function FullPageImageView(props: { photoId: string }) {
   const idAsNumber = Number(props.photoId);
   if (Number.isNaN(idAsNumber)) throw new Error("Invalid photo id");
@@ -47,6 +48,9 @@ export async function FullPageImageView(props: { photoId: string }) {
               Delete
             </Button>
           </form>
+          <div>
+        
+        </div>
         </div>
       </div>
     </div>

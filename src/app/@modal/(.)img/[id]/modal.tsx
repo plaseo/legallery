@@ -22,18 +22,17 @@ export function Modal({ children }: { children: React.ReactNode }) {
     
       <dialog
         ref={dialogRef}
-        className="absolute flex bg-black/90 text-white"
+        className="absolute w-full h-full bg-black/90 text-white"
         onClose={onDismiss}
       >
+        <div className='relative'>
+          <a className='absolute top-1/2 left-1/2 text-xl' onClick={onDismiss}>Close</a>
+        </div>
         {children}
-        <button
-        onClick={() => {
-          router.back()
-        }}
-      >
-        Close
-      </button>
+        
+        
       </dialog>,
+      
     
     document.getElementById('modal-root')!
   );

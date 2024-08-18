@@ -8,6 +8,7 @@ export default async function PhotoModal({
   params: { id: string };
 }) {
   return (
+    
     <Modal>
       <FullPageImageView photoId={photoId} />
     </Modal>

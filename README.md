@@ -19,6 +19,7 @@ To:Do
 ## To:Do
 fix page layout for images of different resolutions
 selecting images on gallery page (state management, library like zustand)
+https://github.com/pmndrs/zustand
 infinite scroll
 folders/albums(modify schema)
 

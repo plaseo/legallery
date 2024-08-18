@@ -1,7 +1,6 @@
 "use client";
 import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
-import { UploadButton } from "../../utils/uploadthing";
 import { LeUploadButton } from "../_components/upload-button";
 
 export function NavBar() {
