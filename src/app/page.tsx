@@ -20,7 +20,7 @@ async function Images() {
           style={{objectFit:"contain"}}
           width={192}
           height={192}
-          />
+        />
         </Link>
         <div>{image.name}</div>
       </div>
