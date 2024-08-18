@@ -96,7 +96,7 @@ export function LeUploadButton() {
   const posthog = usePostHog();
   const { inputProps } = useUploadThingInputProps("imageUploader", {
     onUploadBegin() {
-      posthog.capture("upload_begin");
+      posthog.capture("upload-begin");
       toast(
         <div className="flexgap-2 text-slate-100 items-center">
           <LoadingSpinnerSVG /><span className="text-lg">Uploading...</span>
