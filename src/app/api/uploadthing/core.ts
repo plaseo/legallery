@@ -1,8 +1,8 @@
+import { auth, clerkClient } from "@clerk/nextjs/server";
 import { createUploadthing, type FileRouter } from "uploadthing/next";
 import { UploadThingError } from "uploadthing/server";
-import { auth, clerkClient } from "@clerk/nextjs/server";
-import { images } from "~/server/db/schema";
 import { db } from "~/server/db";
+import { images } from "~/server/db/schema";
 import { ratelimit } from "~/server/ratelimit";
 
 const f = createUploadthing();
@@ -13,7 +13,7 @@ export const ourFileRouter = {
       const user = auth();
       if (!user.userId) throw new UploadThingError("Unauthorized");
       const fullUserData = await clerkClient.users.getUser(user.userId);
-      if (fullUserData?.privateMetadata?.["can-upload"] !== "true")
+      if (fullUserData?.privateMetadata?.["can-upload"] !== true)
       throw new UploadThingError("USER DOES NOT HAVE UPLOAD PERMISSION");
       const { success } = await ratelimit.limit(user.userId);
       if (!success) throw new UploadThingError("EXCEEDED RATE LIMIT");
@@ -21,7 +21,7 @@ export const ourFileRouter = {
     })
 
     .onUploadComplete(async ({ metadata, file }) => {
-      console.log("Upload complete for userId:", metadata.userId);
+     
       await db.insert(images).values({
         name: file.name,
         url: file.url,

@@ -11,9 +11,9 @@ To:Do
 - [x] Use Next/Image component
 - [x] Error management (Sentry)
 - [x] Routing/image page
-- [] Delete button with server actions
-- [] Analytics (PostHog)
-- [] Ratelimiting (Upstash)
+- [x] Delete button with server actions
+- [x] Analytics (PostHog)
+- [x] Ratelimiting (Upstash)
 
 
 ## To:Do
@@ -21,3 +21,4 @@ fix page layout for images of different resolutions
 selecting images on gallery page (state management, library like zustand)
 infinite scroll
 folders/albums(modify schema)
+
