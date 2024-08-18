@@ -14,3 +14,10 @@ To:Do
 - [] Delete button with server actions
 - [] Analytics (PostHog)
 - [] Ratelimiting (Upstash)
+
+
+## To:Do
+fix page layout for images of different resolutions
+selecting images on gallery page (state management, library like zustand)
+infinite scroll
+folders/albums(modify schema)
